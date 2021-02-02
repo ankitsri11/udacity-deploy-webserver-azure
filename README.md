@@ -78,7 +78,7 @@ export ARM_TENANT_ID=your_tenant_id
 
 2. Run the following terraform commands to deploy the infrastructure to Azure.
 
-*Note:* You could either store the variable values in `.tfvars` file or can pass in using `-var` parameter to the plan command. In this project, I have added default values for each variable in `variable.tf` so if not passed it won't prompt for an input. 
+**Note:** You could either store the variable values in `.tfvars` file or can pass in using `-var` parameter to the plan command. In this project, I have added default values for each variable in `variable.tf` so if not passed it won't prompt for an input. 
 
 `terraform plan -out solution.plan`
 
