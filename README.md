@@ -2,7 +2,7 @@
 
 ### Introduction
 
-In this project we are deploying a Web Server in Azure using packer and terraform. We are also enforing Azure policy so that no resource is provisioned without tag.
+In this project we are deploying a Web Server in Azure using packer and terraform. We are also enforcing Azure policy so that no resource is provisioned without tag.
 
 ### Prerequisites
 
