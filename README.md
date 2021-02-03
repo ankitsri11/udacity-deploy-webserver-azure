@@ -76,15 +76,33 @@ export ARM_TENANT_ID=your_tenant_id
 
 `terrafrom init`
 
+![terraform-init](terraform-init.png)
+
 2. Run the following terraform commands to deploy the infrastructure to Azure.
 
 **Note:** You could either store the variable values in `.tfvars` file or can pass in using `-var` parameter to the plan command. In this project, I have added default values for each variable in `variable.tf` so if not passed it won't prompt for an input. 
 
 `terraform plan -out solution.plan`
 
+![terraform-plan-1](terraform-plan-1.png)
+
+![terraform-plan-2](terraform-plan-2.png)
+
 `terraform apply solution.plan`
+
+![terraform-apply-1](terraform-apply-1.png)
+
+![terraform-apply-2](terraform-apply-2.png)
+
+Once the `terraform apply` is successfully run, you would all the project resources created in the azure portal.
+
+![project-resource](project-resource.png)
+
 
 ### Clean up the environment
 
 `terraform destroy`
 
+![terraform-destroy-1](terraform-destroy-1.png)
+
+![terraform-destroy-2](terraform-destroy-2.png)

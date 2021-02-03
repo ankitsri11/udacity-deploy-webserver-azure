@@ -24,7 +24,7 @@ variable "admin_username" {
 }
 variable "admin_password" {
 	description = "Password for username"
-	default = "somepassword"
+	default = "SomePassword#1"
 }
 
 variable "image_resource_id" {

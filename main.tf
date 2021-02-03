@@ -47,7 +47,7 @@ resource "azurerm_network_interface" "udacity_project_nic" {
   resource_group_name = azurerm_resource_group.udacity_project_rg.name
 
   ip_configuration {
-    name                          = "internal"
+    name                          = "${var.prefix}-InternalIP-${count.index}"
     subnet_id                     = azurerm_subnet.udacity_project_subnet.id
     private_ip_address_allocation = "Dynamic"
   }
@@ -106,7 +106,7 @@ resource "azurerm_lb" "udacity_project_lb" {
   resource_group_name = azurerm_resource_group.udacity_project_rg.name
 
   frontend_ip_configuration {
-    name                 = "PublicIPAddress"
+    name                 = "${var.prefix}-lb-pip"
     public_ip_address_id = azurerm_public_ip.udacity_project_public_ip.id
   }
 
