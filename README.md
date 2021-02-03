@@ -94,7 +94,7 @@ export ARM_TENANT_ID=your_tenant_id
 
 ![terraform-apply-2](terraform-apply-2.png)
 
-Once the `terraform apply` is successfully run, you would all the project resources created in the azure portal.
+Once the `terraform apply` is successfully run, you would see all the project resources created in the azure portal.
 
 ![project-resource](project-resource.png)
 
